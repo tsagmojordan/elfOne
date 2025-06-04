@@ -24,7 +24,7 @@ public class FoodSearchAppApplication implements CommandLineRunner {
 				Thread.sleep(800);
 			}else {
 				log.info("tentative {} réussie!", i);
-				break;
+
 			}
 		}
 	}
