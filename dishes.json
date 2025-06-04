@@ -1,0 +1,461 @@
+[
+  {
+    "components": [
+      "Carbohydrate",
+      "Fiber",
+      "Micro Nutrient"
+    ],
+    "images": [
+      "http://localhost:8080/images/Sweet_potato_fresh-EP_1.jpg",
+      "http://localhost:8080/images/Sweet_potato_fresh-EP_3.jpg",
+      "http://localhost:8080/images/Sweet_potato_fresh-EP_4.jpg",
+      "http://localhost:8080/images/Sweet_potato_fresh-EP_2.jpg"
+    ],
+    "name": "Sweet Potato Fresh-EP",
+    "recipe": "Peel sweet potatoes, cube edible portion, and roast at 200°C for 25 minutes.",
+    "ingredients": ["Sweet Potato"],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fat",
+      "Protein"
+    ],
+    "images": [
+      "http://localhost:8080/images/UHT_milk_whole_3.jpg",
+      "http://localhost:8080/images/UHT_milk_whole_4.jpg",
+      "http://localhost:8080/images/UHT_milk_whole_2.jpg",
+      "http://localhost:8080/images/UHT_milk_whole_1.jpg"
+    ],
+    "name": "UHT Whole Milk",
+    "recipe": "Serve UHT whole milk chilled or use in cooking.",
+    "ingredients": ["UHT Whole Milk"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Protein",
+      "Carbohydrate",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_with_kidney_beans_1.jpg",
+      "http://localhost:8080/images/Banana_with_kidney_beans_2.jpg"
+    ],
+    "name": "Banana with Kidney Beans",
+    "recipe": "Cook kidney beans, mash with bananas, and simmer for 10 minutes.",
+    "ingredients": [
+      "Kidney Beans",
+      "Banana"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Micro Nutrient",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/White_onion_raw_2.jpg",
+      "http://localhost:8080/images/White_onion_raw_4.jpg",
+      "http://localhost:8080/images/White_onion_raw_1.jpg",
+      "http://localhost:8080/images/White_onion_raw_3.jpg"
+    ],
+    "name": "White Onion Raw",
+    "recipe": "Peel white onion, chop, and use raw in salads or cook in dishes.",
+    "ingredients": ["White Onion"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": ["Carbohydrate"],
+    "images": [
+      "http://localhost:8080/images/white_granulated_sugar_4.jpg",
+      "http://localhost:8080/images/white_granulated_sugar_2.jpg",
+      "http://localhost:8080/images/white_granulated_sugar_3.jpg",
+      "http://localhost:8080/images/white_granulated_sugar_1.jpg"
+    ],
+    "name": "White Granulated Sugar",
+    "recipe": "Use white granulated sugar as a sweetener in cooking or beverages.",
+    "ingredients": ["White Granulated Sugar"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Fat",
+      "Protein"
+    ],
+    "images": [
+      "http://localhost:8080/images/turkey_meat_only_raw_1.jpg",
+      "http://localhost:8080/images/turkey_meat_only_raw_4.jpg",
+      "http://localhost:8080/images/turkey_meat_only_raw_3.jpg",
+      "http://localhost:8080/images/turkey_meat_only_raw_2.jpg"
+    ],
+    "name": "Turkey Meat Only Raw",
+    "recipe": "Slice raw turkey meat and grill for 10-15 minutes until cooked.",
+    "ingredients": ["Turkey Meat"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/Wheat_dry_4.jpg",
+      "http://localhost:8080/images/Wheat_dry_1.jpg",
+      "http://localhost:8080/images/Wheat_dry_2.jpg",
+      "http://localhost:8080/images/Wheat_dry_3.jpg"
+    ],
+    "name": "Wheat Dry",
+    "recipe": "Grind dry wheat into flour or boil whole grains for 30-40 minutes.",
+    "ingredients": ["Wheat Dry"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Micro Nutrient",
+      "Carbohydrate",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/Squash_summer_fresh-EP_3.jpg",
+      "http://localhost:8080/images/Squash_summer_fresh-EP_1.jpg",
+      "http://localhost:8080/images/Squash_summer_fresh-EP_4.jpg",
+      "http://localhost:8080/images/Squash_summer_fresh-EP_2.jpg"
+    ],
+    "name": "Squash Summer Fresh - EP",
+    "recipe": "Peel squash to remove skin, slice edible portion, and boil for 8-10 minutes.",
+    "ingredients": ["Summer Squash"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Protein",
+      "Fat",
+      "Carbohydrate"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_with_meat_3.jpg",
+      "http://localhost:8080/images/Banana_with_meat_1.jpg",
+      "http://localhost:8080/images/Banana_with_meat_2.jpg",
+      "http://localhost:8080/images/Banana_with_meat_4.jpg"
+    ],
+    "name": "Banana with Meat",
+    "recipe": "Cook meat, mash with bananas, and serve as a dish.",
+    "ingredients": [
+      "Mixed Meat",
+      "Banana"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/yam_2.jpg",
+      "http://localhost:8080/images/yam_4.jpg",
+      "http://localhost:8080/images/yam_1.jpg",
+      "http://localhost:8080/images/yam_3.jpg"
+    ],
+    "name": "Yam",
+    "recipe": "Peel yam, slice, and boil for 20 minutes or fry until golden.",
+    "ingredients": ["Yam"],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Protein",
+      "Carbohydrate",
+      "Fat"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_porridge_plain_4.jpg",
+      "http://localhost:8080/images/banana_porridge_plain_1.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_3.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_2.jpg"
+    ],
+    "name": "Banana Porridge with Fish",
+    "recipe": "Flake cooked fish, mix with mashed bananas and wheat flour, cook with water for 15 minutes.",
+    "ingredients": [
+      "Fish",
+      "Banana",
+      "Water",
+      "Wheat Flour White"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Water",
+      "Fiber",
+      "Carbohydrate"
+    ],
+    "images": [
+      "http://localhost:8080/images/Squash_summer_fresh-AP_1.jpg",
+      "http://localhost:8080/images/Squash_summer_fresh-AP_2.jpg",
+      "http://localhost:8080/images/Squash_summer_fresh-AP_4.jpg",
+      "http://localhost:8080/images/Squash_summer_fresh-AP_3.jpg"
+    ],
+    "name": "Squash Summer Fresh - AP",
+    "recipe": "Wash squash, including skin, slice, and steam or boil for 10 minutes.",
+    "ingredients": ["Summer Squash"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Fiber",
+      "Carbohydrate"
+    ],
+    "images": [
+      "http://localhost:8080/images/taro-raw_2.jpg",
+      "http://localhost:8080/images/taro-raw_3.jpg",
+      "http://localhost:8080/images/taro-raw_1.jpg",
+      "http://localhost:8080/images/taro-raw_4.jpg"
+    ],
+    "name": "Taro - Raw",
+    "recipe": "Peel taro, cube, and boil for 15-20 minutes until tender.",
+    "ingredients": ["Taro"],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Protein",
+      "Carbohydrate",
+      "Fat"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_porridge_plain_3.jpg",
+      "http://localhost:8080/images/banana_porridge_plain_1.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_4.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_2.jpg"
+    ],
+    "name": "Banana Porridge with Meat",
+    "recipe": "Cook meat, mash with bananas and wheat flour, simmer with water for 15 minutes.",
+    "ingredients": [
+      "Water",
+      "Mixed Meat",
+      "Banana",
+      "Wheat Flour White"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Fiber",
+      "Carbohydrate"
+    ],
+    "images": [
+      "http://localhost:8080/images/Sweet_potato_fresh-AP_2.jpg",
+      "http://localhost:8080/images/Sweet_potato_fresh-AP_1.jpg",
+      "http://localhost:8080/images/Sweet_potato_fresh-AP_3.jpg",
+      "http://localhost:8080/images/Sweet_potato_fresh-AP_4.jpg"
+    ],
+    "name": "Sweet Potato Fresh-AP",
+    "recipe": "Wash sweet potatoes with skin, boil for 20-25 minutes until soft.",
+    "ingredients": ["Sweet Potato"],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Fat",
+      "Protein"
+    ],
+    "images": [
+      "http://localhost:8080/images/Whole_fresh_egg_raw_4.jpg",
+      "http://localhost:8080/images/Whole_fresh_egg_raw_2.jpg",
+      "http://localhost:8080/images/Whole_fresh_egg_raw_3.jpg",
+      "http://localhost:8080/images/Whole_fresh_egg_raw_1.jpg"
+    ],
+    "name": "Whole Fresh Egg",
+    "recipe": "Crack raw egg and cook by boiling, frying, or scrambling for 5-10 minutes.",
+    "ingredients": ["Whole Egg"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fiber",
+      "Micro Nutrient",
+      "Protein"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_porridge_plain_4.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_3.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_2.jpg",
+      "http://localhost:8080/images/banana_porridge_plain_1.jpg"
+    ],
+    "name": "Banana Porridge with Meat Spinach",
+    "recipe": "Cook meat and spinach, mash with bananas and wheat flour, simmer for 15 minutes.",
+    "ingredients": [
+      "Mixed Meat",
+      "Wheat Flour White",
+      "Spinach",
+      "Banana"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Protein",
+      "Fiber",
+      "Fat",
+      "Carbohydrate"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_with_cashew_nut_1.jpg",
+      "http://localhost:8080/images/Banana_with_cashew_nut_2.jpg"
+    ],
+    "name": "Banana with Cashew Nut",
+    "recipe": "Slice bananas, mix with crushed cashew nuts, and serve as a snack.",
+    "ingredients": [
+      "Cashew Nut",
+      "Banana"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Fiber",
+      "Carbohydrate",
+      "Micro Nutrient"
+    ],
+    "images": [
+      "http://localhost:8080/images/Sweet_potato_red-orange_1.jpg",
+      "http://localhost:8080/images/Sweet_potato_red-orange_3.jpg",
+      "http://localhost:8080/images/Sweet_potato_red-orange_4.jpg",
+      "http://localhost:8080/images/Sweet_potato_red-orange_2.jpg"
+    ],
+    "name": "Sweet Potato Red-Orange",
+    "recipe": "Peel sweet potatoes, cube, and boil for 15-20 minutes until tender.",
+    "ingredients": ["Sweet Potato"],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": ["Carbohydrate"],
+    "images": [
+      "http://localhost:8080/images/Wheat_flour_white_1.jpg",
+      "http://localhost:8080/images/Wheat_flour_white_4.jpg",
+      "http://localhost:8080/images/Wheat_flour_white_3.jpg",
+      "http://localhost:8080/images/Wheat_flour_white_2.jpg"
+    ],
+    "name": "Wheat Flour White",
+    "recipe": "Use white wheat flour for baking or as a thickener in cooking.",
+    "ingredients": ["Wheat Flour White"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": ["Micro Nutrient"],
+    "images": [
+      "http://localhost:8080/images/Turmeric_powder_2.jpg",
+      "http://localhost:8080/images/Turmeric_powder_4.jpg",
+      "http://localhost:8080/images/Turmeric_powder_3.jpg",
+      "http://localhost:8080/images/Turmeric_powder_1.jpg"
+    ],
+    "name": "Turmeric Powder",
+    "recipe": "Use ground turmeric as a spice in cooking or mix with water for a paste.",
+    "ingredients": ["Turmeric Powder"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fiber",
+      "Micro Nutrient"
+    ],
+    "images": [
+      "http://localhost:8080/images/Turnip_raw_1.jpg",
+      "http://localhost:8080/images/Turnip_raw_3.jpg",
+      "http://localhost:8080/images/Turnip_raw_4.jpg",
+      "http://localhost:8080/images/Turnip_raw_2.jpg"
+    ],
+    "name": "Turnip Raw",
+    "recipe": "Peel turnip, slice, and boil or roast for 15-20 minutes.",
+    "ingredients": ["Turnip"],
+    "preventedDiseases": [],
+    "region": "Global"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fat",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_with_coconut_milk_1.jpg",
+      "http://localhost:8080/images/Banana_with_coconut_milk_2.jpg",
+      "http://localhost:8080/images/Banana_with_coconut_milk_4.jpg",
+      "http://localhost:8080/images/Banana_with_coconut_milk_3.jpg"
+    ],
+    "name": "Banana with Coconut Milk",
+    "recipe": "Cook bananas in coconut milk over low heat for 10 minutes.",
+    "ingredients": [
+      "Coconut Milk",
+      "Banana"
+    ],
+    "preventedDiseases": [],
+    "region": "Coastal Africa"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Fiber"
+    ],
+    "images": [
+      "http://localhost:8080/images/Banana_porridge_plain_3.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_4.jpg",
+      "http://localhost:8080/images/banana_porridge_plain_1.jpg",
+      "http://localhost:8080/images/Banana_porridge_plain_2.jpg"
+    ],
+    "name": "Banana Porridge Plain",
+    "recipe": "Mash bananas, mix with wheat flour and water, cook over low heat for 10 minutes to form porridge.",
+    "ingredients": [
+      "Water",
+      "Banana",
+      "Wheat Flour White"
+    ],
+    "preventedDiseases": [],
+    "region": "Africa"
+  },
+  {
+    "components": [
+      "Carbohydrate",
+      "Micro Nutrient",
+      "Water"
+    ],
+    "images": [
+      "http://localhost:8080/images/Watermelon_pulp_fresh_4.jpg",
+      "http://localhost:8080/images/Watermelon_pulp_fresh_3.jpg",
+      "http://localhost:8080/images/Watermelon_pulp_fresh_2.jpg",
+      "http://localhost:8080/images/Watermelon_pulp_fresh_1.jpg"
+    ],
+    "name": "Watermelon Pulp Fresh",
+    "recipe": "Scoop out watermelon pulp and serve fresh or blend into juice.",
+    "ingredients": ["Watermelon Pulp"],
+    "preventedDiseases": [],
+    "region": "Africa"
+  }
+]

@@ -1,0 +1,1401 @@
+@prefix : <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#> .
+@base <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#> .
+
+<http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Composedof
+nicha:Composedof rdf:type owl:ObjectProperty ;
+                 rdfs:domain nicha:Food ;
+                 rdfs:range nicha:Disease ;
+                 rdfs:label "Composedof" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#belongto
+nicha:belongto rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain nicha:Food ;
+               rdfs:range nicha:DelocalizedArea ;
+               rdfs:label "belongs to" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#compose
+nicha:compose rdf:type owl:ObjectProperty ;
+              rdfs:domain nicha:Buffet ;
+              rdfs:range nicha:Dish ;
+              rdfs:label "compose" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#composeOf
+nicha:composeOf rdf:type owl:ObjectProperty ;
+                rdfs:domain nicha:Dish ;
+                rdfs:range nicha:Food ;
+                rdfs:label "compose of" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#composedOf
+nicha:composedOf rdf:type owl:ObjectProperty ;
+                 rdfs:domain nicha:Food ;
+                 rdfs:range nicha:FoodComponent ;
+                 rdfs:label "composed of" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#composeof
+nicha:composeof rdf:type owl:ObjectProperty ;
+                rdfs:domain nicha:FoodGroup ;
+                rdfs:range nicha:Food ;
+                rdfs:label "compose of" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#hasImage
+nicha:hasImage rdf:type owl:ObjectProperty ;
+               rdfs:domain nicha:Food ;
+               rdfs:label "Has image" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#has_disease
+nicha:has_disease rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  rdfs:domain nicha:Person ;
+                  rdfs:range nicha:Disease ;
+                  rdfs:label "has disease" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#has_habit
+nicha:has_habit rdf:type owl:ObjectProperty ;
+                rdfs:domain nicha:Person ;
+                rdfs:range nicha:LifeHabits .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#has_prevention
+nicha:has_prevention rdf:type owl:ObjectProperty ;
+                     rdfs:domain nicha:Disease ;
+                     rdfs:range nicha:Prevention ;
+                     rdfs:label "has prevention" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#has_symptom
+nicha:has_symptom rdf:type owl:ObjectProperty ;
+                  rdfs:domain nicha:Disease ;
+                  rdfs:range nicha:Symptoms ;
+                  rdfs:label "has symptoms" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#has_treatment
+nicha:has_treatment rdf:type owl:ObjectProperty ;
+                    rdfs:domain nicha:Disease ;
+                    rdfs:range nicha:TreatmentProtocol ;
+                    rdfs:label "has treatment" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#hasrecipe
+nicha:hasrecipe rdf:type owl:ObjectProperty ;
+                rdfs:domain nicha:Food ;
+                rdfs:range nicha:Recipe ;
+                rdfs:label "has recipe" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#hasImage
+nicha:hasImage rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:anyURI .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#AlcoholicBeverage
+nicha:AlcoholicBeverage rdf:type owl:Class ;
+                        rdfs:subClassOf nicha:Beverage ;
+                        rdfs:label "Alcoholic Beverage" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BehaviourHabits
+nicha:BehaviourHabits rdf:type owl:Class ;
+                      rdfs:subClassOf nicha:LifeHabits ;
+                      rdfs:label "Behaviour Habits" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Beverage
+nicha:Beverage rdf:type owl:Class ;
+               rdfs:subClassOf nicha:Food ;
+               rdfs:label "Beverage" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Buffet
+nicha:Buffet rdf:type owl:Class ;
+             rdfs:label "Buffet" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Cancer
+nicha:Cancer rdf:type owl:Class ;
+             rdfs:subClassOf nicha:Disease ;
+             rdfs:label "Cancer" .
+             
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Coffee
+nicha:Coffee rdf:type owl:Class ;
+             rdfs:subClassOf nicha:Beverage ;
+             rdfs:label "Coffee" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Complement
+nicha:Complement rdf:type owl:Class ;
+                 rdfs:subClassOf nicha:Food ;
+                 rdfs:label "Complement" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#CookedFood
+nicha:CookedFood rdf:type owl:Class ;
+                 rdfs:subClassOf nicha:Food ;
+                 rdfs:label "Cooked Food" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#DelocalizedArea
+nicha:DelocalizedArea rdf:type owl:Class ;
+                      rdfs:label "Delocalized Area" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Disease
+nicha:Disease rdf:type owl:Class ;
+	      rdfs:label "Disease" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Dish
+nicha:Dish rdf:type owl:Class ;
+           rdfs:subClassOf nicha:Food ;
+           rdfs:label "Dish" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#EatingHabits
+nicha:EatingHabits rdf:type owl:Class ;
+                   rdfs:subClassOf nicha:LifeHabits ;
+                   rdfs:label "eating Habit" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Fiber
+nicha:Fiber rdf:type owl:Class ;
+            rdfs:subClassOf nicha:FoodComponent .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Food
+nicha:Food rdf:type owl:Class ;
+           rdfs:label "Food" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#FoodAdditive
+nicha:FoodAdditive rdf:type owl:Class ;
+                   rdfs:subClassOf nicha:FoodComponent ;
+                   rdfs:label "Food Additive" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#FoodComponent
+nicha:FoodComponent rdf:type owl:Class ;
+                    rdfs:label "Food Component" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#FoodGroup
+nicha:FoodGroup rdf:type owl:Class ;
+                rdfs:label "Food Group" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#FoodWithComplement
+nicha:FoodWithComplement rdf:type owl:Class ;
+                         rdfs:subClassOf nicha:Food ;
+                         rdfs:label "Food With Complement" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Fruit
+nicha:Fruit rdf:type owl:Class ;
+            rdfs:subClassOf nicha:RawFood ;
+            rdfs:label "Fruit" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Ingredient
+nicha:Ingredient rdf:type owl:Class ;
+                 rdfs:subClassOf nicha:Food ;
+                 rdfs:label "Ingredient" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Kystes
+nicha:Kystes rdf:type owl:Class ;
+             rdfs:subClassOf nicha:Disease ;
+             rdfs:label "Kystes" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#LifeHabits
+nicha:LifeHabits rdf:type owl:Class ;
+	    rdfs:label "Life Habit" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#MacroNutrient
+nicha:MacroNutrient rdf:type owl:Class ;
+                    rdfs:subClassOf nicha:Nutrient ;
+                    rdfs:label "Macro Nutrient" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#MainFood
+nicha:MainFood rdf:type owl:Class ;
+               rdfs:subClassOf nicha:Food ;
+               rdfs:label "Main Food" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#ManufacturedBeverage
+nicha:ManufacturedBeverage rdf:type owl:Class ;
+                           rdfs:subClassOf nicha:Beverage ;
+                           rdfs:label "Manufactured Beverage" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#ManufacturedFood
+nicha:ManufacturedFood rdf:type owl:Class ;
+                       rdfs:subClassOf nicha:Food ;
+                       rdfs:label "Manufactured Food" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#MicroNutrient
+nicha:MicroNutrient rdf:type owl:Class ;
+                    rdfs:subClassOf nicha:Nutrient .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Myomes
+nicha:Myomes rdf:type owl:Class ;
+             rdfs:subClassOf nicha:Disease ;
+             rdfs:label "Myomes" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#NaturalBeverage
+nicha:NaturalBeverage rdf:type owl:Class ;
+                      rdfs:subClassOf nicha:Beverage ;
+                      rdfs:label "Natural Beverage" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Nutrient
+nicha:Nutrient rdf:type owl:Class ;
+               rdfs:subClassOf nicha:FoodComponent ;
+               rdfs:label "Nutrient" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Person
+nicha:Person rdf:type owl:Class ;
+	     rdfs:label "person" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Prevention
+nicha:Prevention rdf:type owl:Class ;
+                 rdfs:label "Prevention" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#RawFood
+nicha:RawFood rdf:type owl:Class ;
+              rdfs:subClassOf nicha:Food ;
+              rdfs:label "Raw Food" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Recipe
+nicha:Recipe rdf:type owl:Class ;
+             rdfs:label "Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SecondaryMetabolite
+nicha:SecondaryMetabolite rdf:type owl:Class ;
+                          rdfs:subClassOf nicha:FoodAdditive ;
+                          rdfs:label "Secondary Metabolite" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Symptoms
+nicha:Symptoms rdf:type owl:Class ;
+               rdfs:label "Symptoms" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Tea
+nicha:Tea rdf:type owl:Class ;
+          rdfs:subClassOf nicha:Beverage ;
+          rdfs:label "Tea" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Tisane
+nicha:Tisane rdf:type owl:Class ;
+             rdfs:subClassOf nicha:Beverage ;
+             rdfs:label "Tisane" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TreatmentProtocol
+nicha:TreatmentProtocol rdf:type owl:Class ;
+                        rdfs:label "TreatmentProtocol" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Vegetables
+nicha:Vegetables rdf:type owl:Class ;
+                 rdfs:subClassOf nicha:RawFood ;
+                 rdfs:label "Vegetables" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Water
+nicha:Water rdf:type owl:Class ;
+            rdfs:subClassOf nicha:FoodComponent ;
+            rdfs:label "Water" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#A_lump_in_the_breast_or_underarm
+nicha:A_lump_in_the_breast_or_underarm rdf:type owl:NamedIndividual ,
+                                                nicha:Symptoms .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Abnormal_uterine_bleeding
+nicha:Abnormal_uterine_bleeding rdf:type owl:NamedIndividual ,
+                                         nicha:Symptoms .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Abnormal_vaginal_bleeding
+nicha:Abnormal_vaginal_bleeding rdf:type owl:NamedIndividual ,
+                                         nicha:Symptoms .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Ada
+nicha:Ada rdf:type owl:NamedIndividual ,
+                   nicha:Person ;
+          nicha:has_disease nicha:Ovarian_cancer ;
+          rdfs:label "Ada" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Africa
+nicha:Africa rdf:type owl:NamedIndividual ,
+                      nicha:DelocalizedArea ;
+             rdfs:label "Africa" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Anna
+nicha:Anna rdf:type owl:NamedIndividual ,
+                    nicha:Person ;
+           nicha:has_disease nicha:Endometrial_Cancer ;
+           rdfs:label "Anna" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Banana
+nicha:Banana rdf:type owl:NamedIndividual ,
+                      nicha:RawFood ;
+             nicha:composedOf nicha:Carbohydrate ,
+                              nicha:Fiber ,
+                              nicha:MicroNutrient ;
+             rdfs:label "Banana" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgePlain
+nicha:BananaPorridgePlain rdf:type owl:NamedIndividual ,
+                                   nicha:Dish ;
+                          nicha:belongto nicha:Africa ;
+                          nicha:composeOf nicha:Banana ,
+                                          nicha:WaterComponent ,
+                                          nicha:WheatFlourWhite ;
+                          nicha:composedOf nicha:Carbohydrate ,
+                                           nicha:Fiber ;
+                          nicha:hasrecipe nicha:BananaPorridgePlainRecipe ;
+                          nicha:hasImage "http://localhost:8080/images/Banana_porridge_plain_2.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Banana_porridge_plain_3.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Banana_porridge_plain_4.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/banana_porridge_plain_1.jpg"^^xsd:anyURI ;
+                          rdfs:label "Banana Porridge Plain" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgePlainRecipe
+nicha:BananaPorridgePlainRecipe rdf:type owl:NamedIndividual ,
+                                         nicha:Recipe ;
+                                rdfs:comment "Mash bananas, mix with wheat flour and water, cook over low heat for 10 minutes to form porridge." ;
+                                rdfs:label "Banana Porridge Plain Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgeWithFish
+nicha:BananaPorridgeWithFish rdf:type owl:NamedIndividual ,
+                                      nicha:Dish ;
+                             nicha:belongto nicha:Africa ;
+                             nicha:composeOf nicha:Banana ,
+                                             nicha:Fish ,
+                                             nicha:WaterComponent ,
+                                             nicha:WheatFlourWhite ;
+                             nicha:composedOf nicha:Carbohydrate ,
+                                              nicha:Fat ,
+                                              nicha:Protein ;
+                             nicha:hasrecipe nicha:BananaPorridgeWithFishRecipe ;
+                             nicha:hasImage "http://localhost:8080/images/Banana_porridge_plain_2.jpg"^^xsd:anyURI ,
+                                            "http://localhost:8080/images/Banana_porridge_plain_3.jpg"^^xsd:anyURI ,
+                                            "http://localhost:8080/images/Banana_porridge_plain_4.jpg"^^xsd:anyURI ,
+                                            "http://localhost:8080/images/banana_porridge_plain_1.jpg"^^xsd:anyURI ;
+                             rdfs:label "Banana Porridge with Fish" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgeWithFishRecipe
+nicha:BananaPorridgeWithFishRecipe rdf:type owl:NamedIndividual ,
+                                            nicha:Recipe ;
+                                   rdfs:comment "Flake cooked fish, mix with mashed bananas and wheat flour, cook with water for 15 minutes." ;
+                                   rdfs:label "Banana Porridge with Fish Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgeWithMeat
+nicha:BananaPorridgeWithMeat rdf:type owl:NamedIndividual ,
+                                      nicha:Dish ;
+                             nicha:belongto nicha:Africa ;
+                             nicha:composeOf nicha:Banana ,
+                                             nicha:Meat ,
+                                             nicha:WaterComponent ,
+                                             nicha:WheatFlourWhite ;
+                             nicha:composedOf nicha:Carbohydrate ,
+                                              nicha:Fat ,
+                                              nicha:Protein ;
+                             nicha:hasrecipe nicha:BananaPorridgeWithMeatRecipe ;
+                             nicha:hasImage "http://localhost:8080/images/Banana_porridge_plain_2.jpg"^^xsd:anyURI ,
+                                            "http://localhost:8080/images/Banana_porridge_plain_3.jpg"^^xsd:anyURI ,
+                                            "http://localhost:8080/images/Banana_porridge_plain_4.jpg"^^xsd:anyURI ,
+                                            "http://localhost:8080/images/banana_porridge_plain_1.jpg"^^xsd:anyURI ;
+                             rdfs:label "Banana Porridge with Meat" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgeWithMeatRecipe
+nicha:BananaPorridgeWithMeatRecipe rdf:type owl:NamedIndividual ,
+                                            nicha:Recipe ;
+                                   rdfs:comment "Cook meat, mash with bananas and wheat flour, simmer with water for 15 minutes." ;
+                                   rdfs:label "Banana Porridge with Meat Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgeWithMeatSpinach
+nicha:BananaPorridgeWithMeatSpinach rdf:type owl:NamedIndividual ,
+                                             nicha:Dish ;
+                                    nicha:belongto nicha:Africa ;
+                                    nicha:composeOf nicha:Banana ,
+                                                    nicha:Meat ,
+                                                    nicha:Spinach ,
+                                                    nicha:WheatFlourWhite ;
+                                    nicha:composedOf nicha:Carbohydrate ,
+                                                     nicha:Fiber ,
+                                                     nicha:MicroNutrient ,
+                                                     nicha:Protein ;
+                                    nicha:hasrecipe nicha:BananaPorridgeWithMeatSpinachRecipe ;
+                                    nicha:hasImage "http://localhost:8080/images/Banana_porridge_plain_2.jpg"^^xsd:anyURI ,
+                                                   "http://localhost:8080/images/Banana_porridge_plain_3.jpg"^^xsd:anyURI ,
+                                                   "http://localhost:8080/images/Banana_porridge_plain_4.jpg"^^xsd:anyURI ,
+                                                   "http://localhost:8080/images/banana_porridge_plain_1.jpg"^^xsd:anyURI ;
+                                    rdfs:label "Banana Porridge with Meat Spinach" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaPorridgeWithMeatSpinachRecipe
+nicha:BananaPorridgeWithMeatSpinachRecipe rdf:type owl:NamedIndividual ,
+                                                   nicha:Recipe ;
+                                          rdfs:comment "Cook meat and spinach, mash with bananas and wheat flour, simmer for 15 minutes." ;
+                                          rdfs:label "Banana Porridge with Meat Spinach Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithCashewNut
+nicha:BananaWithCashewNut rdf:type owl:NamedIndividual ,
+                                   nicha:Dish ;
+                          nicha:belongto nicha:Africa ;
+                          nicha:composeOf nicha:Banana ,
+                                          nicha:CashewNut ;
+                          nicha:composedOf nicha:Carbohydrate ,
+                                           nicha:Fat ,
+                                           nicha:Fiber ,
+                                           nicha:Protein ;
+                          nicha:hasrecipe nicha:BananaWithCashewNutRecipe ;
+                          nicha:hasImage "http://localhost:8080/images/Banana_with_cashew_nut_1.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Banana_with_cashew_nut_2.jpg"^^xsd:anyURI ;
+                          rdfs:label "Banana with Cashew Nut" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithCashewNutRecipe
+nicha:BananaWithCashewNutRecipe rdf:type owl:NamedIndividual ,
+                                         nicha:Recipe ;
+                                rdfs:comment "Slice bananas, mix with crushed cashew nuts, and serve as a snack." ;
+                                rdfs:label "Banana with Cashew Nut Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithCoconutMilk
+nicha:BananaWithCoconutMilk rdf:type owl:NamedIndividual ,
+                                     nicha:Dish ;
+                            nicha:belongto nicha:CoastalAfrica ;
+                            nicha:composeOf nicha:Banana ,
+                                            nicha:CoconutMilk ;
+                            nicha:composedOf nicha:Carbohydrate ,
+                                             nicha:Fat ,
+                                             nicha:Fiber ;
+                            nicha:hasrecipe nicha:BananaWithCoconutMilkRecipe ;
+                            nicha:hasImage "http://localhost:8080/images/Banana_with_coconut_milk_1.jpg"^^xsd:anyURI ,
+                                           "http://localhost:8080/images/Banana_with_coconut_milk_2.jpg"^^xsd:anyURI ,
+                                           "http://localhost:8080/images/Banana_with_coconut_milk_3.jpg"^^xsd:anyURI ,
+                                           "http://localhost:8080/images/Banana_with_coconut_milk_4.jpg"^^xsd:anyURI ;
+                            rdfs:label "Banana with Coconut Milk" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithCoconutMilkRecipe
+nicha:BananaWithCoconutMilkRecipe rdf:type owl:NamedIndividual ,
+                                           nicha:Recipe ;
+                                  rdfs:comment "Cook bananas in coconut milk over low heat for 10 minutes." ;
+                                  rdfs:label "Banana with Coconut Milk Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithKidneyBeans
+nicha:BananaWithKidneyBeans rdf:type owl:NamedIndividual ,
+                                     nicha:Dish ;
+                            nicha:belongto nicha:Africa ;
+                            nicha:composeOf nicha:Banana ,
+                                            nicha:KidneyBeans ;
+                            nicha:composedOf nicha:Carbohydrate ,
+                                             nicha:Fiber ,
+                                             nicha:Protein ;
+                            nicha:hasrecipe nicha:BananaWithKidneyBeansRecipe ;
+                            nicha:hasImage "http://localhost:8080/images/Banana_with_kidney_beans_1.jpg"^^xsd:anyURI ,
+                                           "http://localhost:8080/images/Banana_with_kidney_beans_2.jpg"^^xsd:anyURI ;
+                            rdfs:label "Banana with Kidney Beans" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithKidneyBeansRecipe
+nicha:BananaWithKidneyBeansRecipe rdf:type owl:NamedIndividual ,
+                                           nicha:Recipe ;
+                                  rdfs:comment "Cook kidney beans, mash with bananas, and simmer for 10 minutes." ;
+                                  rdfs:label "Banana with Kidney Beans Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithMeat
+nicha:BananaWithMeat rdf:type owl:NamedIndividual ,
+                              nicha:Dish ;
+                     nicha:belongto nicha:Africa ;
+                     nicha:composeOf nicha:Banana ,
+                                     nicha:Meat ;
+                     nicha:composedOf nicha:Carbohydrate ,
+                                      nicha:Fat ,
+                                      nicha:Protein ;
+                     nicha:hasrecipe nicha:BananaWithMeatRecipe ;
+                     nicha:hasImage "http://localhost:8080/images/Banana_with_meat_1.jpg"^^xsd:anyURI ,
+                                    "http://localhost:8080/images/Banana_with_meat_2.jpg"^^xsd:anyURI ,
+                                    "http://localhost:8080/images/Banana_with_meat_3.jpg"^^xsd:anyURI ,
+                                    "http://localhost:8080/images/Banana_with_meat_4.jpg"^^xsd:anyURI ;
+                     rdfs:label "Banana with Meat" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#BananaWithMeatRecipe
+nicha:BananaWithMeatRecipe rdf:type owl:NamedIndividual ,
+                                    nicha:Recipe ;
+                           rdfs:comment "Cook meat, mash with bananas, and serve as a dish." ;
+                           rdfs:label "Banana with Meat Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Breast_Cancer
+nicha:Breast_Cancer rdf:type owl:NamedIndividual ,
+                             nicha:Cancer ;
+                    nicha:has_prevention nicha:Breastfeeding_may_reduce_the_risk ,
+                                         nicha:Limit_alcohol_consumption ,
+                                         nicha:Limiting_hormone_replacement ,
+                                         nicha:Maintain_a_healthy_weight ;
+                    nicha:has_symptom nicha:A_lump_in_the_breast_or_underarm ,
+                                      nicha:Change_in_size_or_shape_of_the_breast ,
+                                      nicha:Dimpling_or_puckering_of_the_skin ;
+                    nicha:has_treatment nicha:Chemotherapy ,
+                                        nicha:Lumpectomy_removal_of_the_tumor_and_a_small_margin ,
+                                        nicha:Mastectomy_removal_of_the_entire_breast ;
+                    rdfs:label "Breast_Cancer " .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Breastfeeding_may_reduce_the_risk
+nicha:Breastfeeding_may_reduce_the_risk rdf:type owl:NamedIndividual ,
+                                                 nicha:Prevention ;
+                                                 rdfs:label "Breastfeeding_may_reduce_the_risk" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Carbohydrate
+nicha:Carbohydrate rdf:type owl:NamedIndividual ,
+                            nicha:MacroNutrient ;
+                   rdfs:label "Carbohydrate" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#CashewNut
+nicha:CashewNut rdf:type owl:NamedIndividual ,
+                         nicha:RawFood ;
+                nicha:composedOf nicha:Fat ,
+                                 nicha:Fiber ,
+                                 nicha:Protein ;
+                rdfs:label "Cashew Nut" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Cervical_Cancer
+nicha:Cervical_Cancer rdf:type owl:NamedIndividual ,
+                               nicha:Cancer ;
+                      nicha:has_prevention nicha:HPV_vaccination ,
+                                           nicha:Regular_Pap_smears_and_HPV_testing ,
+                                           nicha:Safe_sex_practices ;
+                      nicha:has_symptom nicha:Unusual_vaginal_discharge ;
+                      nicha:has_treatment nicha:Chemotherapy ,
+                                          nicha:Early-stage_Surgery_hysterectomy_radiation ;
+                      rdfs:label "Cervical_Cancer" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Change_in_size_or_shape_of_the_breast
+nicha:Change_in_size_or_shape_of_the_breast rdf:type owl:NamedIndividual ,
+                                                     nicha:Symptoms ;
+                                            rdfs:label "Change_in_size_or_shape_of_the_breast" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Chemotherapy
+nicha:Chemotherapy rdf:type owl:NamedIndividual ,
+                            nicha:TreatmentProtocol ;
+                            rdfs:label "Chemotherapy" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#CoastalAfrica
+nicha:CoastalAfrica rdf:type owl:NamedIndividual ,
+                             nicha:DelocalizedArea ;
+                    rdfs:label "Coastal Africa" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#CoconutMilk
+nicha:CoconutMilk rdf:type owl:NamedIndividual ,
+                           nicha:Ingredient ;
+                  nicha:composedOf nicha:Fat ,
+                                   nicha:MicroNutrient ;
+                  rdfs:label "Coconut Milk" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Control_diabetes_and_hypertension
+nicha:Control_diabetes_and_hypertension rdf:type owl:NamedIndividual ,
+                                                 nicha:Prevention ;
+                                         rdfs:label "Control_diabetes_and_hypertension" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Dimpling_or_puckering_of_the_skin
+nicha:Dimpling_or_puckering_of_the_skin rdf:type owl:NamedIndividual ,
+                                                 nicha:Symptoms ;
+                                         rdfs:label "Dimpling_or_puckering_of_the_skin" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Early-stage_Surgery_hysterectomy_radiation
+nicha:Early-stage_Surgery_hysterectomy_radiation rdf:type owl:NamedIndividual ,
+                                                          nicha:TreatmentProtocol .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#EggWhole
+nicha:EggWhole rdf:type owl:NamedIndividual ,
+                        nicha:RawFood ;
+               nicha:composedOf nicha:Fat ,
+                                nicha:Protein ;
+               rdfs:label "Whole Egg" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Endometrial_Cancer
+nicha:Endometrial_Cancer rdf:type owl:NamedIndividual ,
+                                  nicha:Cancer ;
+                         nicha:has_prevention nicha:Control_diabetes_and_hypertension ,
+                                              nicha:Maintain_a_healthy_weight ;
+                         nicha:has_symptom nicha:Abnormal_uterine_bleeding ,
+                                           nicha:Pelvian_Pain ;
+                         nicha:has_treatment nicha:Chemotherapy ,
+                                             nicha:Hormone_therapy ;
+                         rdfs:label "Endometrial_Cancer" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Fat
+nicha:Fat rdf:type owl:NamedIndividual ,
+                   nicha:MacroNutrient ;
+          rdfs:label "Fat" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Fiber
+nicha:Fiber rdf:type owl:NamedIndividual ,
+                     nicha:Fiber .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Fish
+nicha:Fish rdf:type owl:NamedIndividual ,
+                    nicha:RawFood ;
+           nicha:composedOf nicha:Fat ,
+                            nicha:Protein ;
+           rdfs:label "Fish" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Frequent_urination
+nicha:Frequent_urination rdf:type owl:NamedIndividual ,
+                                  nicha:Symptoms ;
+                                  rdfs:label "Frequent_urination" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Global
+nicha:Global rdf:type owl:NamedIndividual ,
+                      nicha:DelocalizedArea ;
+             rdfs:label "Global" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#HPV_vaccination
+nicha:HPV_vaccination rdf:type owl:NamedIndividual ,
+                               nicha:Prevention ;
+                               rdfs:label "HPV_vaccination" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Hormone_therapy
+nicha:Hormone_therapy rdf:type owl:NamedIndividual ,
+                               nicha:TreatmentProtocol ;
+                               rdfs:label "Hormone_therapy" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#KidneyBeans
+nicha:KidneyBeans rdf:type owl:NamedIndividual ,
+                           nicha:RawFood ;
+                  nicha:composedOf nicha:Carbohydrate ,
+                                   nicha:Fiber ,
+                                   nicha:Protein ;
+                  rdfs:label "Kidney Beans" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Limit_alcohol_consumption
+nicha:Limit_alcohol_consumption rdf:type owl:NamedIndividual ,
+                                         nicha:Prevention ;
+                                         rdfs:label "Limit_alcohol_consumption" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Limiting_hormone_replacement
+nicha:Limiting_hormone_replacement rdf:type owl:NamedIndividual ,
+                                            nicha:Prevention ;
+                                            rdfs:label "Limiting_hormone_replacement" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Lumpectomy_removal_of_the_tumor_and_a_small_margin
+nicha:Lumpectomy_removal_of_the_tumor_and_a_small_margin rdf:type owl:NamedIndividual ,
+                                                                  nicha:TreatmentProtocol ;
+                                                                  rdfs:label"Lumpectomy_removal_of_the_tumor_and_a_small_margin" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Maintain_a_healthy_weight
+nicha:Maintain_a_healthy_weight rdf:type owl:NamedIndividual ,
+                                         nicha:Prevention ;
+                                         rdfs:label "Maintain_a_healthy_weight" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Mary
+nicha:Mary rdf:type owl:NamedIndividual ,
+                    nicha:Person ;
+           nicha:has_disease nicha:Breast_Cancer ;
+           rdfs:label "Mary" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Mastectomy_removal_of_the_entire_breast
+nicha:Mastectomy_removal_of_the_entire_breast rdf:type owl:NamedIndividual ,
+                                                       nicha:TreatmentProtocol ;
+                                                       rdfs:label "Mastectomy_removal_of_the_entire_breast" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Meat
+nicha:Meat rdf:type owl:NamedIndividual ,
+                    nicha:RawFood ;
+           nicha:composedOf nicha:Fat ,
+                            nicha:Protein ;
+           rdfs:label "Mixed Meat" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#MicroNutrient
+nicha:MicroNutrient rdf:type owl:NamedIndividual ,
+                             nicha:MicroNutrient .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#OnionWhite
+nicha:OnionWhite rdf:type owl:NamedIndividual ,
+                          nicha:RawFood ;
+                 nicha:composedOf nicha:Fiber ,
+                                  nicha:MicroNutrient ;
+                 rdfs:label "White Onion" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Ovarian_cancer
+nicha:Ovarian_cancer rdf:type owl:NamedIndividual ,
+                              nicha:Cancer ;
+                     nicha:has_prevention nicha:Regular_pelvic_exams ,
+                                          nicha:Risk-reducing_surgery_for_high-risk_women ;
+                     nicha:has_symptom nicha:Frequent_urination ,
+                                       nicha:abdominal_pain ;
+                     nicha:has_treatment nicha:Chemotherapy ,
+                                         nicha:Surgery_removal_of_ovaries_and_affected_tissues ;
+                     rdfs:label "ovarian cancer" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Pauline
+nicha:Pauline rdf:type owl:NamedIndividual ,
+                       nicha:Person ;
+              nicha:has_disease nicha:Breast_Cancer ;
+              rdfs:label "Pauline" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Pelvian_Pain
+nicha:Pelvian_Pain rdf:type owl:NamedIndividual ,
+                            nicha:Symptoms ;
+                            rdfs:label "Pelvian_Pain " .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Protein
+nicha:Protein rdf:type owl:NamedIndividual ,
+                       nicha:MacroNutrient ;
+              rdfs:label "Protein" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Regular_Pap_smears_and_HPV_testing
+nicha:Regular_Pap_smears_and_HPV_testing rdf:type owl:NamedIndividual ,
+                                                  nicha:Prevention ;
+                                                  rdfs:label "Regular_Pap_smears_and_HPV_testing" .
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Regular_pelvic_exams
+nicha:Regular_pelvic_exams rdf:type owl:NamedIndividual ,
+                                    nicha:Prevention ;
+                                    rdfs:label "Regular_pelvic_exams" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Risk-reducing_surgery_for_high-risk_women
+nicha:Risk-reducing_surgery_for_high-risk_women rdf:type owl:NamedIndividual ,
+                                                         nicha:Prevention ;
+                                                         rdfs:label "Risk-reducing_surgery_for_high-risk_women" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Safe_sex_practices
+nicha:Safe_sex_practices rdf:type owl:NamedIndividual ,
+                                  nicha:Prevention ;
+                                  rdfs:label "Safe_sex_practices" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SampleBuffet
+nicha:SampleBuffet rdf:type owl:NamedIndividual ,
+                            nicha:Buffet ;
+                   nicha:compose nicha:BananaPorridgePlain ,
+                                 nicha:BananaPorridgeWithFish ,
+                                 nicha:BananaPorridgeWithMeat ,
+                                 nicha:BananaPorridgeWithMeatSpinach ,
+                                 nicha:BananaWithCashewNut ,
+                                 nicha:BananaWithCoconutMilk ,
+                                 nicha:BananaWithKidneyBeans ,
+                                 nicha:BananaWithMeat ,
+                                 nicha:SquashSummerFreshAP ,
+                                 nicha:SquashSummerFreshEP ,
+                                 nicha:SweetPotatoFreshAP ,
+                                 nicha:SweetPotatoFreshEP ,
+                                 nicha:SweetPotatoRedOrange ,
+                                 nicha:TaroRaw ,
+                                 nicha:TurkeyMeatOnlyRaw ,
+                                 nicha:TurmericPowder ,
+                                 nicha:TurnipRaw ,
+                                 nicha:UHTMilkWhole ,
+                                 nicha:WatermelonPulpFresh ,
+                                 nicha:WheatDry ,
+                                 nicha:WheatFlourWhite ,
+                                 nicha:WhiteGranulatedSugar ,
+                                 nicha:WhiteOnionRaw ,
+                                 nicha:WholeFreshEggRaw ,
+                                 nicha:Yam ;
+                   rdfs:label "Sample Buffet" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Spinach
+nicha:Spinach rdf:type owl:NamedIndividual ,
+                       nicha:RawFood ;
+              nicha:composedOf nicha:Fiber ,
+                               nicha:MicroNutrient ;
+              rdfs:label "Spinach" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SquashSummer
+nicha:SquashSummer rdf:type owl:NamedIndividual ,
+                            nicha:RawFood ;
+                   nicha:composedOf nicha:Carbohydrate ,
+                                    nicha:Fiber ,
+                                    nicha:MicroNutrient ,
+                                    nicha:WaterComponent ;
+                   rdfs:label "Summer Squash" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SquashSummerAPRecipe
+nicha:SquashSummerAPRecipe rdf:type owl:NamedIndividual ,
+                                    nicha:Recipe ;
+                           rdfs:comment "Wash squash, including skin, slice, and steam or boil for 10 minutes." ;
+                           rdfs:label "Squash Summer Fresh-AP Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SquashSummerEPRecipe
+nicha:SquashSummerEPRecipe rdf:type owl:NamedIndividual ,
+                                    nicha:Recipe ;
+                           rdfs:comment "Peel squash to remove skin, slice edible portion, and boil for 8-10 minutes." ;
+                           rdfs:label "Squash Summer Fresh-EP Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SquashSummerFreshAP
+nicha:SquashSummerFreshAP rdf:type owl:NamedIndividual ,
+                                   nicha:Dish ;
+                          nicha:belongto nicha:Global ;
+                          nicha:composeOf nicha:SquashSummer ;
+                          nicha:composedOf nicha:Carbohydrate ,
+                                           nicha:Fiber ,
+                                           nicha:WaterComponent ;
+                          nicha:hasrecipe nicha:SquashSummerAPRecipe ;
+                          nicha:hasImage "http://localhost:8080/images/Squash_summer_fresh-AP_1.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Squash_summer_fresh-AP_2.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Squash_summer_fresh-AP_3.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Squash_summer_fresh-AP_4.jpg"^^xsd:anyURI ;
+                          rdfs:label "Squash Summer Fresh - AP" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SquashSummerFreshEP
+nicha:SquashSummerFreshEP rdf:type owl:NamedIndividual ,
+                                   nicha:Dish ;
+                          nicha:belongto nicha:Global ;
+                          nicha:composeOf nicha:SquashSummer ;
+                          nicha:composedOf nicha:Carbohydrate ,
+                                           nicha:Fiber ,
+                                           nicha:MicroNutrient ;
+                          nicha:hasrecipe nicha:SquashSummerEPRecipe ;
+                          nicha:hasImage "http://localhost:8080/images/Squash_summer_fresh-EP_1.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Squash_summer_fresh-EP_2.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Squash_summer_fresh-EP_3.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Squash_summer_fresh-EP_4.jpg"^^xsd:anyURI ;
+                          rdfs:label "Squash Summer Fresh - EP" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Surgery_removal_of_ovaries_and_affected_tissues
+nicha:Surgery_removal_of_ovaries_and_affected_tissues rdf:type owl:NamedIndividual ,
+                                                               nicha:TreatmentProtocol ;
+                                                               rdfs:label "Surgery_removal_of_ovaries_and_affected_tissues" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotato
+nicha:SweetPotato rdf:type owl:NamedIndividual ,
+                           nicha:RawFood ;
+                  nicha:composedOf nicha:Carbohydrate ,
+                                   nicha:Fiber ,
+                                   nicha:MicroNutrient ;
+                  rdfs:label "Sweet Potato" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotatoAPRecipe
+nicha:SweetPotatoAPRecipe rdf:type owl:NamedIndividual ,
+                                   nicha:Recipe ;
+                          rdfs:comment "Wash sweet potatoes with skin, boil for 20-25 minutes until soft." ;
+                          rdfs:label "Sweet Potato Fresh-AP Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotatoEPRecipe
+nicha:SweetPotatoEPRecipe rdf:type owl:NamedIndividual ,
+                                   nicha:Recipe ;
+                          rdfs:comment "Peel sweet potatoes, cube edible portion, and roast at 200°C for 25 minutes." ;
+                          rdfs:label "Sweet Potato Fresh-EP Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotatoFreshAP
+nicha:SweetPotatoFreshAP rdf:type owl:NamedIndividual ,
+                                  nicha:Dish ;
+                         nicha:belongto nicha:Africa ;
+                         nicha:composeOf nicha:SweetPotato ;
+                         nicha:composedOf nicha:Carbohydrate ,
+                                          nicha:Fiber ;
+                         nicha:hasrecipe nicha:SweetPotatoAPRecipe ;
+                         nicha:hasImage "http://localhost:8080/images/Sweet_potato_fresh-AP_1.jpg"^^xsd:anyURI ,
+                                        "http://localhost:8080/images/Sweet_potato_fresh-AP_2.jpg"^^xsd:anyURI ,
+                                        "http://localhost:8080/images/Sweet_potato_fresh-AP_3.jpg"^^xsd:anyURI ,
+                                        "http://localhost:8080/images/Sweet_potato_fresh-AP_4.jpg"^^xsd:anyURI ;
+                         rdfs:label "Sweet Potato Fresh-AP" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotatoFreshEP
+nicha:SweetPotatoFreshEP rdf:type owl:NamedIndividual ,
+                                  nicha:Dish ;
+                         nicha:belongto nicha:Africa ;
+                         nicha:composeOf nicha:SweetPotato ;
+                         nicha:composedOf nicha:Carbohydrate ,
+                                          nicha:Fiber ,
+                                          nicha:MicroNutrient ;
+                         nicha:hasrecipe nicha:SweetPotatoEPRecipe ;
+                         nicha:hasImage "http://localhost:8080/images/Sweet_potato_fresh-EP_1.jpg"^^xsd:anyURI ,
+                                        "http://localhost:8080/images/Sweet_potato_fresh-EP_2.jpg"^^xsd:anyURI ,
+                                        "http://localhost:8080/images/Sweet_potato_fresh-EP_3.jpg"^^xsd:anyURI ,
+                                        "http://localhost:8080/images/Sweet_potato_fresh-EP_4.jpg"^^xsd:anyURI ;
+                         rdfs:label "Sweet Potato Fresh-EP" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotatoOrangeRecipe
+nicha:SweetPotatoOrangeRecipe rdf:type owl:NamedIndividual ,
+                                       nicha:Recipe ;
+                              rdfs:comment "Peel sweet potatoes, cube, and boil for 15-20 minutes until tender." ;
+                              rdfs:label "Sweet Potato Red-Orange Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#SweetPotatoRedOrange
+nicha:SweetPotatoRedOrange rdf:type owl:NamedIndividual ,
+                                    nicha:Dish ;
+                           nicha:belongto nicha:Africa ;
+                           nicha:composeOf nicha:SweetPotato ;
+                           nicha:composedOf nicha:Carbohydrate ,
+                                            nicha:Fiber ,
+                                            nicha:MicroNutrient ;
+                           nicha:hasrecipe nicha:SweetPotatoOrangeRecipe ;
+                           nicha:hasImage "http://localhost:8080/images/Sweet_potato_red-orange_1.jpg"^^xsd:anyURI ,
+                                          "http://localhost:8080/images/Sweet_potato_red-orange_2.jpg"^^xsd:anyURI ,
+                                          "http://localhost:8080/images/Sweet_potato_red-orange_3.jpg"^^xsd:anyURI ,
+                                          "http://localhost:8080/images/Sweet_potato_red-orange_4.jpg"^^xsd:anyURI ;
+                           rdfs:label "Sweet Potato Red-Orange" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Taro
+nicha:Taro rdf:type owl:NamedIndividual ,
+                    nicha:RawFood ;
+           nicha:composedOf nicha:Carbohydrate ,
+                            nicha:Fiber ;
+           rdfs:label "Taro" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TaroRaw
+nicha:TaroRaw rdf:type owl:NamedIndividual ,
+                       nicha:Dish ;
+              nicha:belongto nicha:Africa ;
+              nicha:composeOf nicha:Taro ;
+              nicha:composedOf nicha:Carbohydrate ,
+                               nicha:Fiber ;
+              nicha:hasrecipe nicha:TaroRawRecipe ;
+              nicha:hasImage "http://localhost:8080/images/taro-raw_1.jpg"^^xsd:anyURI ,
+                             "http://localhost:8080/images/taro-raw_2.jpg"^^xsd:anyURI ,
+                             "http://localhost:8080/images/taro-raw_3.jpg"^^xsd:anyURI ,
+                             "http://localhost:8080/images/taro-raw_4.jpg"^^xsd:anyURI ;
+              rdfs:label "Taro - Raw" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TaroRawRecipe
+nicha:TaroRawRecipe rdf:type owl:NamedIndividual ,
+                             nicha:Recipe ;
+                    rdfs:comment "Peel taro, cube, and boil for 15-20 minutes until tender." ;
+                    rdfs:label "Taro Raw Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurkeyMeat
+nicha:TurkeyMeat rdf:type owl:NamedIndividual ,
+                          nicha:RawFood ;
+                 nicha:composedOf nicha:Fat ,
+                                  nicha:Protein ;
+                 rdfs:label "Turkey Meat" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurkeyMeatOnlyRaw
+nicha:TurkeyMeatOnlyRaw rdf:type owl:NamedIndividual ,
+                                 nicha:Dish ;
+                        nicha:belongto nicha:Global ;
+                        nicha:composeOf nicha:TurkeyMeat ;
+                        nicha:composedOf nicha:Fat ,
+                                         nicha:Protein ;
+                        nicha:hasrecipe nicha:TurkeyMeatRecipe ;
+                        nicha:hasImage "http://localhost:8080/images/turkey_meat_only_raw_1.jpg"^^xsd:anyURI ,
+                                       "http://localhost:8080/images/turkey_meat_only_raw_2.jpg"^^xsd:anyURI ,
+                                       "http://localhost:8080/images/turkey_meat_only_raw_3.jpg"^^xsd:anyURI ,
+                                       "http://localhost:8080/images/turkey_meat_only_raw_4.jpg"^^xsd:anyURI ;
+                        rdfs:label "Turkey Meat Only Raw" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurkeyMeatRecipe
+nicha:TurkeyMeatRecipe rdf:type owl:NamedIndividual ,
+                                nicha:Recipe ;
+                       rdfs:comment "Slice raw turkey meat and grill for 10-15 minutes until cooked." ;
+                       rdfs:label "Turkey Meat Only Raw Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurmericPowder
+nicha:TurmericPowder rdf:type owl:NamedIndividual ,
+                              nicha:Dish ,
+                              nicha:Ingredient ;
+                     nicha:belongto nicha:Global ;
+                     nicha:composeOf nicha:TurmericPowder ;
+                     nicha:composedOf nicha:MicroNutrient ;
+                     nicha:hasrecipe nicha:TurmericPowderRecipe ;
+                     nicha:hasImage "http://localhost:8080/images/Turmeric_powder_1.jpg"^^xsd:anyURI ,
+                                    "http://localhost:8080/images/Turmeric_powder_2.jpg"^^xsd:anyURI ,
+                                    "http://localhost:8080/images/Turmeric_powder_3.jpg"^^xsd:anyURI ,
+                                    "http://localhost:8080/images/Turmeric_powder_4.jpg"^^xsd:anyURI ;
+                     rdfs:label "Turmeric Powder" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurmericPowderRecipe
+nicha:TurmericPowderRecipe rdf:type owl:NamedIndividual ,
+                                    nicha:Recipe ;
+                           rdfs:comment "Use ground turmeric as a spice in cooking or mix with water for a paste." ;
+                           rdfs:label "Turmeric Powder Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Turnip
+nicha:Turnip rdf:type owl:NamedIndividual ,
+                      nicha:RawFood ;
+             nicha:composedOf nicha:Carbohydrate ,
+                              nicha:Fiber ,
+                              nicha:MicroNutrient ;
+             rdfs:label "Turnip" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurnipRaw
+nicha:TurnipRaw rdf:type owl:NamedIndividual ,
+                         nicha:Dish ;
+                nicha:belongto nicha:Global ;
+                nicha:composeOf nicha:Turnip ;
+                nicha:composedOf nicha:Carbohydrate ,
+                                 nicha:Fiber ,
+                                 nicha:MicroNutrient ;
+                nicha:hasrecipe nicha:TurnipRawRecipe ;
+                nicha:hasImage "http://localhost:8080/images/Turnip_raw_1.jpg"^^xsd:anyURI ,
+                               "http://localhost:8080/images/Turnip_raw_2.jpg"^^xsd:anyURI ,
+                               "http://localhost:8080/images/Turnip_raw_3.jpg"^^xsd:anyURI ,
+                               "http://localhost:8080/images/Turnip_raw_4.jpg"^^xsd:anyURI ;
+                rdfs:label "Turnip Raw" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#TurnipRawRecipe
+nicha:TurnipRawRecipe rdf:type owl:NamedIndividual ,
+                               nicha:Recipe ;
+                      rdfs:comment "Peel turnip, slice, and boil or roast for 15-20 minutes." ;
+                      rdfs:label "Turnip Raw Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#UHTMilkWhole
+nicha:UHTMilkWhole rdf:type owl:NamedIndividual ,
+                            nicha:Dish ,
+                            nicha:Food ;
+                   nicha:belongto nicha:Global ;
+                   nicha:composeOf nicha:UHTMilkWhole ;
+                   nicha:composedOf nicha:Carbohydrate ,
+                                    nicha:Fat ,
+                                    nicha:Protein ;
+                   nicha:hasrecipe nicha:UHTMilkWholeRecipe ;
+                   nicha:hasImage "http://localhost:8080/images/UHT_milk_whole_1.jpg"^^xsd:anyURI ,
+                                  "http://localhost:8080/images/UHT_milk_whole_2.jpg"^^xsd:anyURI ,
+                                  "http://localhost:8080/images/UHT_milk_whole_3.jpg"^^xsd:anyURI ,
+                                  "http://localhost:8080/images/UHT_milk_whole_4.jpg"^^xsd:anyURI ;
+                   rdfs:label "UHT Milk Whole" ,
+                              "UHT Whole Milk" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#UHTMilkWholeRecipe
+nicha:UHTMilkWholeRecipe rdf:type owl:NamedIndividual ,
+                                  nicha:Recipe ;
+                         rdfs:comment "Serve UHT whole milk chilled or use in cooking." ;
+                         rdfs:label "UHT Milk Whole Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Unusual_vaginal_discharge
+nicha:Unusual_vaginal_discharge rdf:type owl:NamedIndividual ,
+                                         nicha:Symptoms ;
+                                         rdfs:label "Unusual_vaginal_discharge" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WaterComponent
+nicha:WaterComponent rdf:type owl:NamedIndividual ,
+                              nicha:Water ;
+                     rdfs:label "Water" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WatermelonPulp
+nicha:WatermelonPulp rdf:type owl:NamedIndividual ,
+                              nicha:RawFood ;
+                     nicha:composedOf nicha:Carbohydrate ,
+                                      nicha:MicroNutrient ,
+                                      nicha:WaterComponent ;
+                     rdfs:label "Watermelon Pulp" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WatermelonPulpFresh
+nicha:WatermelonPulpFresh rdf:type owl:NamedIndividual ,
+                                   nicha:Dish ;
+                          nicha:belongto nicha:Africa ;
+                          nicha:composeOf nicha:WatermelonPulp ;
+                          nicha:composedOf nicha:Carbohydrate ,
+                                           nicha:MicroNutrient ,
+                                           nicha:WaterComponent ;
+                          nicha:hasrecipe nicha:WatermelonPulpRecipe ;
+                          nicha:hasImage "http://localhost:8080/images/Watermelon_pulp_fresh_1.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Watermelon_pulp_fresh_2.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Watermelon_pulp_fresh_3.jpg"^^xsd:anyURI ,
+                                         "http://localhost:8080/images/Watermelon_pulp_fresh_4.jpg"^^xsd:anyURI ;
+                          rdfs:label "Watermelon Pulp Fresh" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WatermelonPulpRecipe
+nicha:WatermelonPulpRecipe rdf:type owl:NamedIndividual ,
+                                    nicha:Recipe ;
+                           rdfs:comment "Scoop out watermelon pulp and serve fresh or blend into juice." ;
+                           rdfs:label "Watermelon_pulp_recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WheatDry
+nicha:WheatDry rdf:type owl:NamedIndividual ,
+                        nicha:Dish ,
+                        nicha:RawFood ;
+               nicha:belongto nicha:Global ;
+               nicha:composeOf nicha:WheatDry ;
+               nicha:composedOf nicha:Carbohydrate ,
+                                nicha:Fiber ;
+               nicha:hasrecipe nicha:WheatDryRecipe ;
+               nicha:hasImage "http://localhost:8080/images/Wheat_dry_1.jpg"^^xsd:anyURI ,
+                              "http://localhost:8080/images/Wheat_dry_2.jpg"^^xsd:anyURI ,
+                              "http://localhost:8080/images/Wheat_dry_3.jpg"^^xsd:anyURI ,
+                              "http://localhost:8080/images/Wheat_dry_4.jpg"^^xsd:anyURI ;
+               rdfs:label "Dry Wheat" ,
+                          "Wheat Dry" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WheatDryRecipe
+nicha:WheatDryRecipe rdf:type owl:NamedIndividual ,
+                              nicha:Recipe ;
+                     rdfs:comment "Grind dry wheat into flour or boil whole grains for 30-40 minutes." ;
+                     rdfs:label "Wheat Dry Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WheatFlourWhite
+nicha:WheatFlourWhite rdf:type owl:NamedIndividual ,
+                               nicha:Dish ,
+                               nicha:Ingredient ;
+                      nicha:belongto nicha:Global ;
+                      nicha:composeOf nicha:WheatFlourWhite ;
+                      nicha:composedOf nicha:Carbohydrate ;
+                      nicha:hasrecipe nicha:WheatFlourWhiteRecipe ;
+                      nicha:hasImage "http://localhost:8080/images/Wheat_flour_white_1.jpg"^^xsd:anyURI ,
+                                     "http://localhost:8080/images/Wheat_flour_white_2.jpg"^^xsd:anyURI ,
+                                     "http://localhost:8080/images/Wheat_flour_white_3.jpg"^^xsd:anyURI ,
+                                     "http://localhost:8080/images/Wheat_flour_white_4.jpg"^^xsd:anyURI ;
+                      rdfs:label "Wheat Flour White" ,
+                                 "White Wheat Flour" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WheatFlourWhiteRecipe
+nicha:WheatFlourWhiteRecipe rdf:type owl:NamedIndividual ,
+                                     nicha:Recipe ;
+                            rdfs:comment "Use white wheat flour for baking or as a thickener in cooking." ;
+                            rdfs:label "Wheat Flour White Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WhiteGranulatedSugar
+nicha:WhiteGranulatedSugar rdf:type owl:NamedIndividual ,
+                                    nicha:Dish ;
+                           nicha:belongto nicha:Global ;
+                           nicha:composeOf nicha:WhiteSugar ;
+                           nicha:composedOf nicha:Carbohydrate ;
+                           nicha:hasrecipe nicha:WhiteSugarRecipe ;
+                           nicha:hasImage "http://localhost:8080/images/white_granulated_sugar_1.jpg"^^xsd:anyURI ,
+                                          "http://localhost:8080/images/white_granulated_sugar_2.jpg"^^xsd:anyURI ,
+                                          "http://localhost:8080/images/white_granulated_sugar_3.jpg"^^xsd:anyURI ,
+                                          "http://localhost:8080/images/white_granulated_sugar_4.jpg"^^xsd:anyURI ;
+                           rdfs:label "White Granulated Sugar" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WhiteOnionRaw
+nicha:WhiteOnionRaw rdf:type owl:NamedIndividual ,
+                             nicha:Dish ;
+                    nicha:belongto nicha:Global ;
+                    nicha:composeOf nicha:OnionWhite ;
+                    nicha:composedOf nicha:Fiber ,
+                                     nicha:MicroNutrient ;
+                    nicha:hasrecipe nicha:whiteOnionRawRecipe ;
+                    nicha:hasImage "http://localhost:8080/images/White_onion_raw_1.jpg"^^xsd:anyURI ,
+                                   "http://localhost:8080/images/White_onion_raw_2.jpg"^^xsd:anyURI ,
+                                   "http://localhost:8080/images/White_onion_raw_3.jpg"^^xsd:anyURI ,
+                                   "http://localhost:8080/images/White_onion_raw_4.jpg"^^xsd:anyURI ;
+                    rdfs:label "White Onion Raw" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WhiteSugar
+nicha:WhiteSugar rdf:type owl:NamedIndividual ,
+                          nicha:Ingredient ;
+                 nicha:composedOf nicha:Carbohydrate ;
+                 rdfs:label "White Granulated Sugar" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WhiteSugarRecipe
+nicha:WhiteSugarRecipe rdf:type owl:NamedIndividual ,
+                                nicha:Recipe ;
+                       rdfs:comment "Use white granulated sugar as a sweetener in cooking or beverages." ;
+                       rdfs:label "White Granulated Sugar Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WholeFreshEggRaw
+nicha:WholeFreshEggRaw rdf:type owl:NamedIndividual ,
+                                nicha:Dish ;
+                       nicha:belongto nicha:Global ;
+                       nicha:composeOf nicha:EggWhole ;
+                       nicha:composedOf nicha:Fat ,
+                                        nicha:Protein ;
+                       nicha:hasrecipe nicha:WholeFreshEggRawRecipe ;
+                       nicha:hasImage "http://localhost:8080/images/Whole_fresh_egg_raw_1.jpg"^^xsd:anyURI ,
+                                      "http://localhost:8080/images/Whole_fresh_egg_raw_2.jpg"^^xsd:anyURI ,
+                                      "http://localhost:8080/images/Whole_fresh_egg_raw_3.jpg"^^xsd:anyURI ,
+                                      "http://localhost:8080/images/Whole_fresh_egg_raw_4.jpg"^^xsd:anyURI ;
+                       rdfs:label "Whole Fresh Egg" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#WholeFreshEggRawRecipe
+nicha:WholeFreshEggRawRecipe rdf:type owl:NamedIndividual ,
+                                      nicha:Recipe ;
+                             rdfs:comment "Crack raw egg and cook by boiling, frying, or scrambling for 5-10 minutes." ;
+                             rdfs:label "Whole Fresh Egg Raw Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#Yam
+nicha:Yam rdf:type owl:NamedIndividual ,
+                   nicha:Dish ,
+                   nicha:RawFood ;
+          nicha:belongto nicha:Africa ;
+          nicha:composeOf nicha:Yam ;
+          nicha:composedOf nicha:Carbohydrate ,
+                           nicha:Fiber ;
+          nicha:hasrecipe nicha:YamRecipe ;
+          nicha:hasImage "http://localhost:8080/images/yam_1.jpg"^^xsd:anyURI ,
+                         "http://localhost:8080/images/yam_2.jpg"^^xsd:anyURI ,
+                         "http://localhost:8080/images/yam_3.jpg"^^xsd:anyURI ,
+                         "http://localhost:8080/images/yam_4.jpg"^^xsd:anyURI ;
+          rdfs:label "Yam" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#YamRecipe
+nicha:YamRecipe rdf:type owl:NamedIndividual ,
+                         nicha:Recipe ;
+                rdfs:comment "Peel yam, slice, and boil for 20 minutes or fry until golden." ;
+                rdfs:label "Yam Recipe" .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#abdominal_pain
+nicha:abdominal_pain rdf:type owl:NamedIndividual ,
+                              nicha:Symptoms .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#angèle
+nicha:angèle rdf:type owl:NamedIndividual ,
+                      nicha:Person ;
+             nicha:has_disease nicha:Cervical_Cancer .
+
+
+###  http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#whiteOnionRawRecipe
+nicha:whiteOnionRawRecipe rdf:type owl:NamedIndividual ,
+                                   nicha:Recipe ;
+                          rdfs:comment "Peel white onion, chop, and use raw in salads or cook in dishes." ;
+                          rdfs:label "White Onion Raw Recipe" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+nicha:Fiber rdfs:label "Fiber" .
+
+
+nicha:MicroNutrient rdfs:label "Micro Nutrient" .
+
+
+nicha:hasImage rdfs:comment "Links a Food instance to an image URL." ;
+               rdfs:label "has image" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

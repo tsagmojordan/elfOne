@@ -1,0 +1,130 @@
+##requete pour récupérer toutes les classes de l'ontologie###
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?class ?label
+WHERE {
+  ?class a owl:Class .
+  OPTIONAL { ?class rdfs:label ?label . }
+}
+
+
+
+###Requête 2 : Lister tous les individus et leurs classes##
+##Cette requête récupère tous les individus et les classes auxquelles ils appartiennent.##
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?individual ?class ?label
+WHERE {
+  ?individual rdf:type ?class .
+  ?class a owl:Class .
+  OPTIONAL { ?individual rdfs:label ?label . }
+}
+
+
+
+###Requête 3 : Lister les plats et leurs nutriments##
+##Cette requête récupère les plats et les composants nutritionnels associés.##
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?dish ?nutrient ?dishLabel ?nutrientLabel
+WHERE {
+  ?dish a nicha:Dish .
+  ?dish nicha:composedOf ?nutrient .
+  OPTIONAL { ?dish rdfs:label ?dishLabel . }
+  OPTIONAL { ?nutrient rdfs:label ?nutrientLabel . }
+}
+
+
+
+
+
+##Requête 4 : Lister les personnes et leurs maladies##
+##Cette requête récupère les personnes et les maladies associées.##
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?person ?disease ?personLabel ?diseaseLabel
+WHERE {
+  ?person a nicha:Person .
+  ?person nicha:has_disease ?disease .
+  OPTIONAL { ?person rdfs:label ?personLabel . }
+  OPTIONAL { ?disease rdfs:label ?diseaseLabel . }
+}
+
+
+##Requête 5 : Lister les plats associés à une région spécifique##
+##Cette requête récupère les plats associés à une région (par exemple, Africa ou CoastalAfrica).##
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?dish ?region ?dishLabel ?regionLabel
+WHERE {
+  ?dish a nicha:Dish .
+  ?dish nicha:belongto ?region .
+  OPTIONAL { ?dish rdfs:label ?dishLabel . }
+  OPTIONAL { ?region rdfs:label ?regionLabel . }
+}
+
+
+
+#Requête 6 : Lister les plats dans un buffet spécifique#
+#Cette requête récupère les plats inclus dans un buffet donné (par exemple, SampleBuffet).#
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?buffet ?dish ?buffetLabel ?dishLabel
+WHERE {
+  ?buffet a nicha:Buffet .
+  ?buffet nicha:compose ?dish .
+  OPTIONAL { ?buffet rdfs:label ?buffetLabel . }
+  OPTIONAL { ?dish rdfs:label ?dishLabel . }
+}
+
+
+
+##Requête 7 : Lister les maladies de type Cancer##
+##Récupère les maladies qui sont des instances de la classe Cancer.##
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?disease ?diseaseLabel
+WHERE {
+  ?disease a nicha:Cancer .
+  OPTIONAL { ?disease rdfs:label ?diseaseLabel . }
+}
+
+
+
+#"Requête 8 : Lister les personnes avec leurs maladies et symptômes##
+##Récupère les personnes, leurs maladies, et les symptômes associés.##
+
+PREFIX nicha: <http://www.semanticweb.org/nicha/ontologies/2025/4/untitled-ontology-5#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?person ?disease ?symptom ?personLabel ?diseaseLabel ?symptomLabel
+WHERE {
+  ?person a nicha:Person .
+  ?person nicha:has_disease ?disease .
+  ?disease nicha:has_symptom ?symptom .
+  OPTIONAL { ?person rdfs:label ?personLabel . }
+  OPTIONAL { ?disease rdfs:label ?diseaseLabel . }
+  OPTIONAL { ?symptom rdfs:label ?symptomLabel . }
+}
