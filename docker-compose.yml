@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8099:8099"
     environment:
       - SPRING_PROFILES_ACTIVE=prod
       - SOLR_HOST="http://solr:8983/solr/food_collection"
